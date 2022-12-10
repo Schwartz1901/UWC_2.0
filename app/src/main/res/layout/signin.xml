@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".Signin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:text="Welcome back!"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp">
+        </TextView>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:background="@drawable/welcome">
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:hint="Enter your name"
+            android:inputType="text"
+            android:paddingStart="10dp"></EditText>
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:hint="Enter your id"
+            android:inputType="text"
+            android:paddingStart="10dp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#D6D88A"
+            android:text="Sign in"
+            android:textStyle="bold"
+            android:textSize="20dp">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
